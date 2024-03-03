@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  selectedNavigationItem: string = 'R';
+
+  onNavigationChanged(navigationItem: string){
+    this.selectedNavigationItem = navigationItem;
+  }
 }
